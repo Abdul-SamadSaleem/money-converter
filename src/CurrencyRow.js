@@ -7,7 +7,7 @@ export default function CurrencyRow(props) {
     selectCurrency,
     onChangeCurrency,
     amount,
-    onChangeAmount
+    onChangeAmount,
   } = props;
   return (
     <div>
@@ -18,7 +18,7 @@ export default function CurrencyRow(props) {
         onChange={onChangeAmount}
       />
       <select value={selectCurrency} onChange={onChangeCurrency}>
-        {currencyOptions.map(option => (
+        {currencyOptions.map((option) => (
           <option key={option} value={option}>
             {option}
           </option>
